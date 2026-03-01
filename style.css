@@ -1,0 +1,311 @@
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #000000, #001f2f, #000814);
+    background-size: 400% 400%;
+    animation: neonBG 12s ease infinite;
+}
+
+@keyframes neonBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h2 {
+    color: #00f7ff;
+    text-shadow: 0 0 8px #00f7ff;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.hero-header {
+    width: 100%;
+    height: 450px;
+    background-image: url("header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.hero-header nav a {
+    margin: 0 20px;
+    color: #00f7ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero-header nav a:hover {
+    text-shadow: 0 0 12px #00f7ff;
+}
+
+
+/* ============================= */
+/* HERO TEXT FIX RAPI */
+/* ============================= */
+
+.hero {
+    text-align: justify;      /* Rapi kiri-kanan */
+    padding: 40px 20px 60px 20px;
+    margin-top: -40px;
+    max-width: 850px;         /* Batas lebar biar tidak terlalu melebar */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h2 {
+    text-align: center;       /* Judul tetap di tengah */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin: 10px 0;           /* Hapus jarak besar antar paragraf */
+    line-height: 1.7;         /* Spasi antar baris lebih rapi */
+    font-size: 16px;
+    color: #cccccc;
+}
+
+button {
+    padding: 12px 25px;
+    background: #00f7ff;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #00f7ff;
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* CONTENT SECTION */
+/* ============================= */
+
+.content {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* ============================= */
+/* PRODUCT LIST */
+/* ============================= */
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00f7ff;
+    border-radius: 15px;
+    padding: 18px;
+    width: 100%;
+    max-width: 280px;   /* lebih kecil */
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 15px #00f7ff33;
+    transition: 0.3s;
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #00f7ff;
+}
+
+/* GAMBAR 200x200 */
+.product-card img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 15px #00f7ff55;
+}
+
+/* TEXT PRODUK */
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.product-desc {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 20px;
+    color: #00f7ff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* BUTTON PESAN */
+.order-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00f7ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    box-shadow: 0 0 20px #00f7ff;
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #00f7ff;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .hero-header {
+        height: 300px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .product-card img {
+        width: 180px;
+        height: 180px;
+    }
+
+}
+
+
+
+/* Neon Title */
+.neon-title {
+    color: #00f7ff;
+    text-shadow: 
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+}
+
+/* Nomor WA */
+.wa-number {
+    margin: 15px 0;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 8px #00f7ff66;
+}
+
+/* Tombol Neon Tanpa Box */
+.neon-group-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    color: #00f7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.neon-group-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Hover Effect */
+.neon-group-btn:hover {
+    background: #00f7ff;
+    color: #000;
+    box-shadow:
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff,
+        0 0 40px #00f7ff;
+}
+
+
+/* ============================= */
+/* FLOAT SCROLL BUTTON - RIGHT SIDE */
+/* ============================= */
+
+.scroll-float {
+    position: fixed;
+    right: 25px;        /* Jarak dari kanan */
+    bottom: 40px;       /* Jarak dari bawah */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 9999;
+}
+
+.scroll-float button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(145deg, #0f2a4a, #001a33);
+
+    box-shadow:
+        0 0 20px #ff0055,
+        0 0 40px #007bff,
+        inset 0 0 10px #000;
+
+    transition: all 0.3s ease;
+}
+
+.scroll-float button:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 30px #ff0055,
+        0 0 60px #007bff,
+        0 0 80px #007bff;
+}
